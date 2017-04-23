@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String username = musername.getText().toString();
                 String password = mpassword.getText().toString();
                 String right = "aman";
-                if(username != null && password != null){
+                if(!username.isEmpty() && !password.isEmpty()){
                     if(password.equals(right)){
                         Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
                         Bundle dataBundle = new Bundle();
